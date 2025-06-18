@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Paglu - Authentic Indian Vegetarian Cuisine</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&family=Spline+Sans:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</head>
+<body class="bg-[#101a23] text-white font-['Spline_Sans','Noto_Sans',sans-serif] min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="flex items-center justify-between border-b border-[#223649] px-4 sm:px-10 py-3 sticky top-0 z-50 bg-[#101a23]">
+    <div class="flex items-center gap-3">
+      <div class="logo w-10 h-10">
+        <img src="https://marketplace.canva.com/EAGOADQey2g/1/0/1600w/canva-brown-simple-circle-restaurant-logo-BiB84MUi2zQ.jpg" alt="Food Paglu Logo" class="w-full h-full rounded-full object-cover">
+      </div>
+      <h2 class="text-xl font-bold text-yellow-400">Food Paglu</h2>
+    </div>
+    <div class="flex items-center gap-4 sm:gap-8">
+      <nav class="flex items-center gap-4 sm:gap-8">
+        <a href="#home" class="nav-link text-sm font-medium hover:text-yellow-400 transition">Home</a>
+        <a href="#menu" class="nav-link text-sm font-medium hover:text-yellow-400 transition">Menu</a>
+        <a href="#about" class="nav-link text-sm font-medium hover:text-yellow-400 transition">About Us</a>
+        <a href="#contact" class="nav-link text-sm font-medium hover:text-yellow-400 transition">Contact</a>
+      </nav>
+      <a href="#contact" class="bg-[#f97316] hover:bg-[#ea580c] text-white px-4 py-2 rounded-lg text-sm font-bold transition min-w-[120px] shadow-lg shadow-orange-500/20">
+        Book a Table
+      </a>
+    </div>
+  </header>
+
+  <main id="main-content" class="flex-1 py-8 px-4 sm:px-10 max-w-6xl mx-auto w-full">
+    <!-- Content dynamically loaded here -->
+  </main>
+
+  <footer class="py-10 border-t border-[#223649] text-center text-[#90adcb] text-sm mt-auto">
+    @2024 Food Paglu. All rights reserved.
+  </footer>
+
+  <!-- Hidden templates -->
+  <div class="hidden">
+    <!-- Home Page Template -->
+    <div id="home-content">
+      <section class="hero rounded-2xl p-8 sm:p-12 md:p-16 flex flex-col justify-center items-center text-center min-h-[70vh] my-8">
+        <div class="max-w-3xl mx-auto">
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 fade-up">
+            Authentic <span class="text-yellow-400">Indian Vegetarian</span> Cuisine
+          </h1>
+          <p class="text-lg sm:text-xl text-[#cbd5e1] mb-10 fade-up">
+            Experience the rich flavors and spices of India in every bite. Our dishes are crafted with traditional recipes and the freshest ingredients.
+          </p>
+          <div class="flex flex-wrap justify-center gap-4 fade-up">
+            <a href="#menu" class="bg-[#f97316] hover:bg-[#ea580c] text-white px-6 py-3 rounded-lg font-bold transition shadow-lg shadow-orange-500/20">
+              Explore Menu
+            </a>
+            <a href="#contact" class="bg-transparent border-2 border-[#f97316] text-[#f97316] hover:bg-[#f97316] hover:text-white px-6 py-3 rounded-lg font-bold transition">
+              Reserve Now
+            </a>
+          </div>
+        </div>
+      </section>
+      
+      <section class="my-20">
+        <h2 class="text-3xl font-bold text-center mb-12 fade-up">Our Specialties</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-[#1e293b] p-6 rounded-2xl border border-[#334155] fade-up">
+            <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mb-4 mx-auto">
+              <ion-icon name="restaurant" class="text-2xl text-[#101a23]"></ion-icon>
+            </div>
+            <h3 class="text-xl font-bold text-center mb-3">Traditional Recipes</h3>
+            <p class="text-[#cbd5e1] text-center">Recipes passed down through generations, preserving authentic flavors and cooking techniques.</p>
+          </div>
+          
+          <div class="bg-[#1e293b] p-6 rounded-2xl border border-[#334155] fade-up">
+            <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mb-4 mx-auto">
+              <ion-icon name="leaf" class="text-2xl text-[#101a23]"></ion-icon>
+            </div>
+            <h3 class="text-xl font-bold text-center mb-3">Fresh Ingredients</h3>
+            <p class="text-[#cbd5e1] text-center">We source the freshest local produce and premium spices for vibrant, healthy dishes.</p>
+          </div>
+          
+          <div class="bg-[#1e293b] p-6 rounded-2xl border border-[#334155] fade-up">
+            <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mb-4 mx-auto">
+              <ion-icon name="sparkles" class="text-2xl text-[#101a23]"></ion-icon>
+            </div>
+            <h3 class="text-xl font-bold text-center mb-3">Expert Chefs</h3>
+            <p class="text-[#cbd5e1] text-center">Our culinary team brings decades of experience in crafting exquisite vegetarian cuisine.</p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="my-20">
+        <div class="flex flex-col md:flex-row gap-10 items-center">
+          <div class="md:w-1/2 fade-up">
+            <div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden">
+              <img src="https://images.pexels.com/photos/958547/pexels-photo-958547.jpeg?auto=compress&cs=tinysrgb&w=1350" alt="Restaurant Interior" class="w-full h-full object-cover">
+            </div>
+          </div>
+          <div class="md:w-1/2 fade-up">
+            <h2 class="text-3xl font-bold mb-6">A Culinary Journey Through India</h2>
+            <p class="text-lg text-[#cbd5e1] mb-6">
+              At Food Paglu, we take you on a gastronomic tour of India's diverse regions. From the rich curries of Punjab to the delicate flavors of South India, our menu celebrates the country's incredible vegetarian heritage.
+            </p>
+            <div class="flex items-center gap-4 flex-wrap">
+              <div class="flex items-center bg-[#1e293b] px-4 py-2 rounded-lg">
+                <ion-icon name="time" class="text-yellow-400 text-xl mr-2"></ion-icon>
+                <span>Mon-Sun: 11am - 11pm</span>
+              </div>
+              <div class="flex items-center bg-[#1e293b] px-4 py-2 rounded-lg">
+                <ion-icon name="location" class="text-yellow-400 text-xl mr-2"></ion-icon>
+                <span>123 Spice Lane, Connaught Place, Delhi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Menu Page Template -->
+    <div id="menu-content">
+      <section class="menu-bg rounded-2xl p-8 min-h-[70vh] my-8 flex flex-col justify-center">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl sm:text-5xl font-bold mb-6 fade-up">
+            Our <span class="text-yellow-400">Vegetarian</span> Menu
+          </h1>
+          <p class="text-lg text-[#cbd5e1] mb-10 fade-up">
+            Discover the rich tapestry of Indian vegetarian cuisine with our carefully curated menu
+          </p>
+        </div>
+      </section>
+      
+      <section class="my-20">
+        <div class="flex flex-wrap gap-6 justify-center mb-12">
+          <button data-filter="all" class="px-6 py-3 bg-[#f97316] text-white rounded-full font-bold filter-active">All</button>
+          <button data-filter="starters" class="px-6 py-3 bg-[#1e293b] hover:bg-[#334155] text-white rounded-full font-bold transition">Starters</button>
+          <button data-filter="main" class="px-6 py-3 bg-[#1e293b] hover:bg-[#334155] text-white rounded-full font-bold transition">Main Course</button>
+          <button data-filter="breads" class="px-6 py-3 bg-[#1e293b] hover:bg-[#334155] text-white rounded-full font-bold transition">Breads</button>
+          <button data-filter="desserts" class="px-6 py-3 bg-[#1e293b] hover:bg-[#334155] text-white rounded-full font-bold transition">Desserts</button>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="menu-items">
+          <!-- Starter 1 -->
+          <div class="dish-card bg-[#1e293b] rounded-2xl overflow-hidden border border-[#334155] transition duration-300 fade-up" data-category="starters">
+            <div class="p-6 flex gap-6">
+              <div class="w-24 h-24 rounded-xl flex-shrink-0">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYAud3G3kRsjZe3N5xs6NHI4uw-wx0BqJb1Q&s" alt="Paneer Tikka" class="w-full h-full object-cover rounded-xl">
+              </div>
+              <div>
+                <div class="flex justify-between items-start mb-2">
+                  <h3 class="text-xl font-bold">Paneer Tikka</h3>
+                  <span class="text-yellow-400 font-bold">₹280</span>
+                </div>
+                <p class="text-[#cbd5e1] text-sm">Cubes of paneer marinated in spices and grilled to perfection</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Starter 2 -->
+          <div class="dish-card bg-[#1e293b] rounded-2xl overflow-hidden border border-[#334155] transition duration-300 fade-up" data-category="starters">
+            <div class="p-6 flex gap-6">
+              <div class="w-24 h-24 rounded-xl flex-shrink-0">
+                <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=200&q=60&fit=crop" alt="Samosa" class="w-full h-full object-cover rounded-xl">
+              </div>
+              <div>
+                <div class="flex justify-between items-start mb-2">
+                  <h3 class="text-xl font-bold">Samosa</h3>
+                  <span class="text-yellow-400 font-bold">₹150</span>
+                </div>
+                <p class="text-[#cbd5e1] text-sm">Crispy pastry filled with spiced potatoes and peas</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Main Course 1 -->
+          <div class="dish-card bg-[#1e293b] rounded-2xl overflow-hidden border border-[#334155] transition duration-300 fade-up" data-category="main">
+            <div class="p-6 flex gap-6">
+              <div class="w-24 h-24 rounded-xl flex-shrink-0">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_JfZHtD_jlggLqhDlthd7Jg2o4gt7OrWH7w&s" alt="Paneer Butter Masala" class="w-full h-full object-cover rounded-xl">
+              </div>
+              <div>
+                <div class="flex justify-between items-start mb-2">
+                  <h3 class="text-xl font-bold">Paneer Butter Masala</h3>
+                  <span class="text-yellow-400 font-bold">₹320</span>
+                </div>
+                <p class="text-[#cbd5e1] text-sm">Paneer cubes in a rich, creamy tomato gravy</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Main Course 2 -->
+          <div class="dish-card bg-[#1e293b] rounded-2xl overflow-hidden border border-[#334155] transition duration-300 fade-up" data-category="main">
+            <div class="p-6 flex gap-6">
+              <div class="w-24 h-24 rounded-xl flex-shrink-0">
+                <img src="https://www.sharmispassions.com/wp-content/uploads/2012/05/dal-makhani7.jpg" alt="Dal Makhani" class="w-full h-full object-cover rounded-xl">
+              </div>
+              <div>
+                <div class="flex justify-between items-start mb-2">
+                  <h3 class="text-xl font-bold">Dal Makhani</h3>
+                  <span class="text-yellow-400 font-bold">₹250</span>
+                </div>
+                <p class="text-[#cbd5e1] text-sm">Creamy black lentils slow-cooked overnight</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Bread 1 -->
+          <div class="dish-card bg-[#1e293b] rounded-2xl overflow-hidden border border-[#334155] transition duration-300 fade-up" data-category="breads">
+            <div class="p-6 flex gap-6">
+              <div class="w-24 h-24 rounded-xl flex-shrink-0">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLv-Dclr8ZMc36DOJD9cNgQ_6wotA3rXX-3A&s" alt="Garlic Naan" class="w-full h-full object-cover rounded-xl">
+              </div>
+              <div>
+                <div class="flex justify-between items-start mb-2">
+                  <h3 class="text-xl font-bold">Garlic Naan</h3>
+                  <span class="text-yellow-400 font-bold">₹90</span>
+                </div>
+                <p class="text-[#cbd5e1] text-sm">Leavened bread with fresh garlic and herbs</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Dessert 1 -->
+          <div class="dish-card bg-[#1e293b] rounded-2xl overflow-hidden border border-[#334155] transition duration-300 fade-up" data-category="desserts">
+            <div class="p-6 flex gap-6">
+              <div class="w-24 h-24 rounded-xl flex-shrink-0">
+                <img src="https://theartisticcook.com/wp-content/uploads/2024/10/Gulab-Jamun-with-Milk-Powder.jpg" alt="Gulab Jamun" class="w-full h-full object-cover rounded-xl">
+              </div>
+              <div>
+                <div class="flex justify-between items-start mb-2">
+                  <h3 class="text-xl font-bold">Gulab Jamun</h3>
+                  <span class="text-yellow-400 font-bold">₹120</span>
+                </div>
+                <p class="text-[#cbd5e1] text-sm">Deep-fried milk solids in sugar syrup</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="bg-[#1e293b] rounded-2xl p-8 my-20 border border-[#334155] fade-up">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-6">Thali Special</h2>
+          <p class="text-lg text-[#cbd5e1] mb-8">
+            Experience the complete Indian meal with our signature thali - a platter featuring a variety of dishes, breads, rice, desserts, and accompaniments.
+          </p>
+          <div class="flex flex-wrap justify-center gap-6">
+            <div class="bg-[#0f172a] p-6 rounded-xl w-64">
+              <img src="https://images.jdmagicbox.com/v2/comp/delhi/l8/011pxx11.xx11.211218190400.x7l8/catalogue/royal-rajdara-restaurant-noida-restaurants-uz4g3mbisi.jpg" alt="Royal Thali" class="w-full h-40 object-cover rounded-lg mb-4">
+              <h3 class="text-xl font-bold text-yellow-400 mb-3">Royal Thali</h3>
+              <p class="mb-4">8 dishes + 3 breads + dessert</p>
+              <div class="text-2xl font-bold">₹450</div>
+            </div>
+            <div class="bg-[#0f172a] p-6 rounded-xl w-64">
+              <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_240,h_240/fmxlxigtjgfbjfdp4hgo" alt="Deluxe Thali" class="w-full h-40 object-cover rounded-lg mb-4">
+              <h3 class="text-xl font-bold text-yellow-400 mb-3">Deluxe Thali</h3>
+              <p class="mb-4">6 dishes + 2 breads + dessert</p>
+              <div class="text-2xl font-bold">₹350</div>
+            </div>
+            <div class="bg-[#0f172a] p-6 rounded-xl w-64">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9IrEfvXa7tWXrzCfhdm7H2aneAWG-mrlNQ&s" alt="Mini Thali" class="w-full h-40 object-cover rounded-lg mb-4">
+              <h3 class="text-xl font-bold text-yellow-400 mb-3">Mini Thali</h3>
+              <p class="mb-4">4 dishes + 1 bread</p>
+              <div class="text-2xl font-bold">₹250</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- About Page Template -->
+    <div id="about-content">
+      <section class="about-bg rounded-2xl p-8 min-h-[70vh] my-8 flex flex-col justify-center">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl sm:text-5xl font-bold mb-6 fade-up">
+            Our <span class="text-yellow-400">Story</span>
+          </h1>
+          <p class="text-lg text-[#cbd5e1] fade-up">
+            Tradition, passion, and authentic Indian flavors
+          </p>
+        </div>
+      </section>
+      
+      <section class="my-20">
+        <div class="flex flex-col md:flex-row gap-10 items-center">
+          <div class="md:w-1/2 fade-up">
+            <h2 class="text-3xl font-bold mb-6">From Family Kitchen to Restaurant</h2>
+            <p class="text-lg text-[#cbd5e1] mb-6">
+              Food Paglu began in 1995 when our founder, Raj Sharma, decided to share his family's treasured recipes with Delhi. What started as a small kitchen serving traditional vegetarian meals to neighbors has grown into a beloved culinary destination.
+            </p>
+            <p class="text-lg text-[#cbd5e1] mb-6">
+              Today, we continue to honor Raj's vision by preparing every dish with the same care, authenticity, and love that made those early meals so special.
+            </p>
+            <div class="flex items-center gap-4 flex-wrap mt-8">
+              <div class="flex items-center gap-3 bg-[#1e293b] px-4 py-2 rounded-lg">
+                <ion-icon name="restaurant" class="text-yellow-400 text-2xl"></ion-icon>
+                <div>
+                  <div class="font-bold">20+</div>
+                  <div class="text-sm text-[#94a3b8]">Years Experience</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 bg-[#1e293b] px-4 py-2 rounded-lg">
+                <ion-icon name="happy" class="text-yellow-400 text-2xl"></ion-icon>
+                <div>
+                  <div class="font-bold">50K+</div>
+                  <div class="text-sm text-[#94a3b8]">Happy Customers</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 bg-[#1e293b] px-4 py-2 rounded-lg">
+                <ion-icon name="book" class="text-yellow-400 text-2xl"></ion-icon>
+                <div>
+                  <div class="font-bold">100+</div>
+                  <div class="text-sm text-[#94a3b8]">Authentic Dishes</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/2 fade-up">
+            <div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden">
+              <img src="https://images.pexels.com/photos/958547/pexels-photo-958547.jpeg?auto=compress&cs=tinysrgb&w=1350" alt="Restaurant History" class="w-full h-full object-cover">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="my-20">
+        <h2 class="text-3xl font-bold text-center mb-12 fade-up">Meet Our Master Chefs</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-[#1e293b] rounded-2xl p-6 border border-[#334155] fade-up">
+            <div class="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden">
+              <img src="https://images.pexels.com/photos/532220/pexels-photo-532220.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Chef Vikram" class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl font-bold text-center mb-2">Chef Vikram Patel</h3>
+            <div class="text-yellow-400 text-center mb-4">Executive Chef</div>
+            <p class="text-[#cbd5e1] text-center">With over 25 years of experience, Chef Vikram specializes in North Indian cuisine and has trained in prestigious kitchens across India.</p>
+          </div>
+          
+          <div class="bg-[#1e293b] rounded-2xl p-6 border border-[#334155] fade-up">
+            <div class="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden">
+              <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Chef Priya" class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl font-bold text-center mb-2">Chef Priya Sharma</h3>
+            <div class="text-yellow-400 text-center mb-4">South Indian Specialist</div>
+            <p class="text-[#cbd5e1] text-center">Hailing from Chennai, Chef Priya brings the authentic flavors of South India to our menu with her expertise in dosas and idlis.</p>
+          </div>
+          
+          <div class="bg-[#1e293b] rounded-2xl p-6 border border-[#334155] fade-up">
+            <div class="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden">
+              <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Chef Arjun" class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl font-bold text-center mb-2">Chef Arjun Mehta</h3>
+            <div class="text-yellow-400 text-center mb-4">Pastry Chef</div>
+            <p class="text-[#cbd5e1] text-center">Our dessert master creates traditional Indian sweets with a modern twist that keep our guests coming back for more.</p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="bg-[#1e293b] rounded-2xl p-8 my-20 border border-[#334155] fade-up">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-6">Our Philosophy</h2>
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0">
+                <ion-icon name="heart" class="text-xl text-[#101a23]"></ion-icon>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Authenticity First</h3>
+                <p class="text-[#cbd5e1]">We stay true to traditional recipes and cooking methods, preserving the authentic taste of Indian vegetarian cuisine.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0">
+                <ion-icon name="leaf" class="text-xl text-[#101a23]"></ion-icon>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Sustainable Sourcing</h3>
+                <p class="text-[#cbd5e1]">We partner with local farmers to source fresh, organic produce while supporting our community.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0">
+                <ion-icon name="people" class="text-xl text-[#101a23]"></ion-icon>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Family Values</h3>
+                <p class="text-[#cbd5e1]">Our restaurant is family-owned and operated, and we treat every guest as an extension of our family.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Contact Page Template -->
+    <div id="contact-content">
+      <section class="contact-bg rounded-2xl p-8 min-h-[70vh] my-8 flex flex-col justify-center">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl sm:text-5xl font-bold mb-6 fade-up">
+            Get In <span class="text-yellow-400">Touch</span>
+          </h1>
+          <p class="text-lg text-[#cbd5e1] fade-up">
+            We'd love to hear from you! Reserve a table or ask us anything.
+          </p>
+        </div>
+      </section>
+      
+      <section class="my-20">
+        <div class="flex flex-col lg:flex-row gap-10">
+          <div class="lg:w-1/2 fade-up">
+            <div class="bg-[#1e293b] rounded-2xl p-8 border border-[#334155] h-full">
+              <h2 class="text-2xl font-bold mb-6">Contact Information</h2>
+              <div class="space-y-6">
+                <div class="flex items-start gap-4">
+                  <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0">
+                    <ion-icon name="location" class="text-xl text-[#101a23]"></ion-icon>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-bold mb-1">Our Location</h3>
+                    <p class="text-[#cbd5e1]">123 Spice Lane, Connaught Place<br>Delhi, 110001</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start gap-4">
+                  <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0">
+                    <ion-icon name="time" class="text-xl text-[#101a23]"></ion-icon>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-bold mb-1">Opening Hours</h3>
+                    <p class="text-[#cbd5e1]">
+                      Monday - Sunday: 11:00 AM - 11:00 PM<br>
+                      Happy Hour: 3:00 PM - 6:00 PM (20% off beverages)
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start gap-4">
+                  <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0">
+                    <ion-icon name="call" class="text-xl text-[#101a23]"></ion-icon>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-bold mb-1">Phone & Email</h3>
+                    <p class="text-[#cbd5e1]">
+                      +91 11 1234 5678<br>
+                      info@foodpaglu.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mt-10">
+                <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+                <div class="flex gap-4">
+                  <a href="#" class="w-12 h-12 bg-[#0f172a] rounded-full flex items-center justify-center hover:bg-[#f97316] transition">
+                    <ion-icon name="logo-facebook" class="text-xl"></ion-icon>
+                  </a>
+                  <a href="#" class="w-12 h-12 bg-[#0f172a] rounded-full flex items-center justify-center hover:bg-[#f97316] transition">
+                    <ion-icon name="logo-instagram" class="text-xl"></ion-icon>
+                  </a>
+                  <a href="#" class="w-12 h-12 bg-[#0f172a] rounded-full flex items-center justify-center hover:bg-[#f97316] transition">
+                    <ion-icon name="logo-twitter" class="text-xl"></ion-icon>
+                  </a>
+                  <a href="#" class="w-12 h-12 bg-[#0f172a] rounded-full flex items-center justify-center hover:bg-[#f97316] transition">
+                    <ion-icon name="logo-youtube" class="text-xl"></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="lg:w-1/2 fade-up">
+            <div class="bg-[#1e293b] rounded-2xl p-8 border border-[#334155]">
+              <h2 class="text-2xl font-bold mb-6">Send Us a Message</h2>
+              <form class="space-y-6">
+                <div>
+                  <label class="block text-[#cbd5e1] mb-2">Full Name</label>
+                  <input type="text" class="w-full bg-[#0f172a] border border-[#334155] rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent" placeholder="Your name">
+                </div>
+                
+                <div>
+                  <label class="block text-[#cbd5e1] mb-2">Email Address</label>
+                  <input type="email" class="w-full bg-[#0f172a] border border-[#334155] rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent" placeholder="your.email@example.com">
+                </div>
+                
+                <div>
+                  <label class="block text-[#cbd5e1] mb-2">Phone Number</label>
+                  <input type="tel" class="w-full bg-[#0f172a] border border-[#334155] rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent" placeholder="+91 1234567890">
+                </div>
+                
+                <div>
+                  <label class="block text-[#cbd5e1] mb-2">Subject</label>
+                  <input type="text" class="w-full bg-[#0f172a] border border-[#334155] rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent" placeholder="What is this regarding?">
+                </div>
+                
+                <div>
+                  <label class="block text-[#cbd5e1] mb-2">Message</label>
+                  <textarea rows="4" class="w-full bg-[#0f172a] border border-[#334155] rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent" placeholder="Your message..."></textarea>
+                </div>
+                
+                <button type="submit" class="w-full bg-[#f97316] hover:bg-[#ea580c] text-white font-bold py-3 px-4 rounded-lg transition shadow-lg shadow-orange-500/20">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="mt-20 fade-up">
+          <h2 class="text-2xl font-bold mb-6 text-center">Find Us</h2>
+          <div class="bg-[#1e293b] rounded-2xl overflow-hidden border border-[#334155]">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.858708140826!2d77.20650731508322!3d28.63262098241491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
